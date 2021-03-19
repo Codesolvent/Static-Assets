@@ -2869,7 +2869,17 @@ class LowcodrReactJS extends Lowcodr{
         return key?this.clientApp.state[key]:this.clientApp.state; 
     }  
   	setClientAppData(key,val){
-        this.clientApp.setState(key,val); 
+      	if(val)
+        {
+          var stObj = Object.assign({});
+          stObj[key] = val;
+          this.clientApp.setState(stObj); 
+        }
+        else
+        if(typeof key == "object")
+        {
+			this.clientApp.setState(key); 
+        }
     }  
     domRefs(){  
       return this.DOMrefs;             
