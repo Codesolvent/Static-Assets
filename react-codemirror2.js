@@ -5,7 +5,7 @@ var ReactCodeMirror = require("react-codemirror2");
 window.ReactCodeMirror = ReactCodeMirror;
 
 
-},{"react-codemirror2":6}],2:[function(require,module,exports){
+},{"react-codemirror2":6,"codemirror":2}],2:[function(require,module,exports){
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
 // Distributed under an MIT license: https://codemirror.net/LICENSE
 
